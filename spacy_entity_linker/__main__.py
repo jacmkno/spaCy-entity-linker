@@ -12,6 +12,7 @@ if __name__ == "__main__":
     command = sys.argv.pop(1)
 
     if command == "download_knowledge_base":
+        print "DOWNLOADIN STUFF..."
         FILE_URL = "https://wikidatafiles.nyc3.digitaloceanspaces.com/Hosting/Hosting/SpacyEntityLinker/datafiles.tar.gz"
 
         OUTPUT_TAR_FILE = '/content/wikidb_filtered.tar.gz'
