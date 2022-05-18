@@ -11,7 +11,7 @@ conn = None
 entity_cache = {}
 chain_cache = {}
 
-DB_DEFAULT_PATH = os.path.abspath(__file__ + '/../../data_spacy_entity_linker/wikidb_filtered.db')
+DB_DEFAULT_PATH = '/content/wikidb_filtered.db'
 
 wikidata_instance = None
 
