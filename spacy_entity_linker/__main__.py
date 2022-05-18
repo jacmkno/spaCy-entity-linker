@@ -14,9 +14,8 @@ if __name__ == "__main__":
     if command == "download_knowledge_base":
         FILE_URL = "https://wikidatafiles.nyc3.digitaloceanspaces.com/Hosting/Hosting/SpacyEntityLinker/datafiles.tar.gz"
 
-        OUTPUT_TAR_FILE = os.path.abspath(
-            os.path.dirname(__file__)) + '/../data_spacy_entity_linker/wikidb_filtered.tar.gz'
-        OUTPUT_DB_PATH = os.path.abspath(os.path.dirname(__file__)) + '/../data_spacy_entity_linker'
+        OUTPUT_TAR_FILE = '/content/wikidb_filtered.tar.gz'
+        OUTPUT_DB_PATH = '/content/'
         if not os.path.exists(OUTPUT_DB_PATH):
             os.makedirs(OUTPUT_DB_PATH)
         urllib.request.urlretrieve(FILE_URL, OUTPUT_TAR_FILE)
